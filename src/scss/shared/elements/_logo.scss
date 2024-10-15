@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  img {
+    width: 160px;
+
+    @include media(md) {
+      width: 183px;
+      height: 36px;
+    }
+  }
+}

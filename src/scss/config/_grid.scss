@@ -1,0 +1,32 @@
+//*
+
+//*
+$columns: 12;
+//*
+$grid-gap: (
+    'default': (
+        'gap-x': 10px,
+        'gap-y': 10px,
+        'container-gap': 10px,
+    ),
+    'sm': (
+        'gap-x': 20px,
+        'gap-y': 20px,
+        'container-gap': 20px,
+    ),
+    // 'lg': (
+    //     'gap-x': size(20),
+    //     'gap-y': size(20),
+    //     'container-gap': size(20),
+    // )
+);
+
+//* Размеры контайнера (.container)
+$container-max-width: (
+    'sm': 440px,    //* 480
+    'xs': 520px,    //* 640
+    'md': 720px,    //* 768
+    'lg': 1220px,    //* 1024
+    //'xl': size(1220)    //* 1280
+);
+

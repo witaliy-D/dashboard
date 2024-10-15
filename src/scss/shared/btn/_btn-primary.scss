@@ -1,0 +1,39 @@
+.btn-primary {
+    --dp-flex: flex;
+    display: var(--dp-flex);
+    align-items: center;
+    justify-content: center;
+    //*
+    font-weight: 500;
+    //*
+    border-radius: 9px;
+
+    @include media(md) {
+      border-radius: 15px;
+    }
+
+    //&._icon {
+    //     justify-content: space-between;
+    // }
+    // &--sm {
+    //     font-size: size(14);
+    //     padding: size(17) size(40);
+    //     line-height: size(17);
+    // }
+    &--md {
+        //min-height: size(60);
+        padding: 11px;
+        font-size: 15px;
+        line-height: 18px;
+
+        @include media(md) {
+          padding: 14px;
+          font-size: 18px;
+          line-height: 22px;
+        }
+    }
+   // &--lg {
+    //     min-height: size(70);
+    //     padding: size(10) size(30);
+    // }
+}

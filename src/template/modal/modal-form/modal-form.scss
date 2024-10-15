@@ -1,0 +1,83 @@
+.modal-form {
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 899;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    z-index: 999;
+
+    .modal-form__box {
+      transform: perspective(600px) translateY(0%) rotateX(0deg);
+    }
+  }
+
+  &__box {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    transform: perspective(600px) translateY(-120%) rotateX(45deg);
+    transition: all 0.8s ease 0s;
+    background-color: #fff;
+    max-width: 520px;
+  }
+
+  &__content {
+    padding: 60px 30px;
+  }
+}
+
+
+.modal-form__close {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+  border: none;
+  padding: 0;
+  font-size: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 11;
+  transition: transform 0.3s;
+}
+
+.modal-form__close:hover {
+  transform: rotate(180deg);
+}
+
+.modal-form__close::before,
+.modal-form__close::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  border-radius: 1px;
+  background-color: #e2360b;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+}
+
+.modal-form__close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-form__close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal-form__close:hover::before,
+.modal-form__close:focus::before,
+.modal-form__close:hover::after,
+.modal-form__close:focus::after {
+  box-shadow: 0 0 5px 0 #ddd;
+}

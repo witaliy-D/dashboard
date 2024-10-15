@@ -1,0 +1,42 @@
+.form-field {
+  margin-bottom: 16px;
+
+  @include media(md) {
+    margin-bottom: 22px;
+  }
+
+  &__label span {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 9px;
+
+    @include media(md) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 11px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 12px;
+    line-height: 15px;
+    color: currentColor;
+    padding: 12px 14px 11px;
+    border: 1px solid rgb(223, 234, 242);
+    border-radius: 10px;
+    background: #fff;
+
+    @include media(md) {
+      font-size: 15px;
+      line-height: 18px;
+      border-radius: 15px;
+      padding: 15px 19px 14px;
+    }
+  }
+}
+
+.form-field__input::placeholder {
+  color: #718ebf;
+}

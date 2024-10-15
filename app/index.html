@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>main</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="nav ">
+      <div class="nav__inner">
+
+        <div class="nav__top">
+          <button class="nav__close burger burger--close" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="/" class="logo">
+            <img src="img/global/logo.svg" alt="logo">
+          </a>
+        </div>
+
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#home"></use>
+              </svg>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#glyph"></use>
+              </svg>
+              <span>Transactions</span>
+            </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#user"></use>
+              </svg>
+              <span>Accounts</span>
+            </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#invest"></use>
+              </svg>
+              <span>Investments</span>
+            </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#credit"></use>
+              </svg>
+              <span>Credit Cards</span>
+            </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#loan"></use>
+              </svg>
+              <span>Loans</span>
+            </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#service"></use>
+              </svg>
+              <span>Services</span>
+            </a>
+          </li>
+          <li class="nav__menu-item">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#econometrics"></use>
+              </svg>
+              <span>My Privileges</span>
+            </a>
+          </li>
+          <li class="nav__menu-item active">
+            <a href="#" class="nav__menu-link">
+              <svg class="nav__menu-icon">
+                <use xlink:href="svg-sprite/sprite.svg#settings"></use>
+              </svg>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="content">
+      <header class="header">
+        <div class="header__inner">
+          <button class="header__toggle burger" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <h2 class="title title--size-md">Setting</h2>
+          <a href="#" class="header__user-profile">
+            <img src="img/global/profile.png" alt="profile">
+          </a>
+          <div class="header__items">
+            <form class="header__search search" action="#">
+              <div class="search__input-wpapper">
+                <button type="submit" class="btn search__submit">
+                  <svg class="search__icon">
+                    <use xlink:href="svg-sprite/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <input type="text" placeholder="Search for something" class="search__input">
+              </div>
+            </form>
+            <a href="#" class="header__btn header__btn-settings">
+              <svg class="header__btn-icon">
+                <use xlink:href="svg-sprite/sprite.svg#settings-stroke"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__btn header__btn-notice">
+              <svg class="header__btn-icon">
+                <use xlink:href="svg-sprite/sprite.svg#notice"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="dashboard">
+        <div class="dashboard__inner">
+
+          <div class="tabs">
+            <div class="tabs__navigation">
+              <button class="tabs__btn active" type="button">Edit Profile</button>
+              <button class="tabs__btn" type="button">Preference</button>
+              <button class="tabs__btn" type="button">Security</button>
+            </div>
+
+            <div class="tabs__content">
+              <div class="tabs__body active">
+                <div class="user-profile">
+                  <div class="user-profile__items">
+                    <div class="user-profile__img">
+                      <img src="img/global/profile.png" alt="profile">
+                      <span class="user-profile__edit">
+                        <svg class="user-profile__icon">
+                          <use xlink:href="svg-sprite/sprite.svg#edit"></use>
+                        </svg>
+                      </span>
+                    </div>
+                    <form action="#" class="user-profile__form">
+                      <div class="user-profile__item">
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Your Name</span>
+                            <input type="text" class="form-field__input" placeholder="Charlene Reed">
+                          </label>
+                        </div>
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">User Name</span>
+                            <input type="text" class="form-field__input" placeholder="Charlene Reed">
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="user-profile__item">
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Email</span>
+                            <input type="email" class="form-field__input" placeholder="charlenereed@gmail.com ">
+                          </label>
+                        </div>
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Password</span>
+                            <input type="password" class="form-field__input" placeholder="**********">
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="user-profile__item">
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Date of Birth</span>
+                            <input type="text" class="form-field__input" placeholder="25 January 1990">
+                          </label>
+                        </div>
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Present Address</span>
+                            <input type="text" class="form-field__input" placeholder="San Jose, California, USA">
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="user-profile__item">
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Present Address</span>
+                            <input type="text" class="form-field__input" placeholder="San Jose, California, USA">
+                          </label>
+                        </div>
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">City</span>
+                            <input type="text" class="form-field__input" placeholder="San Jose">
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="user-profile__item">
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Postal Code</span>
+                            <input type="text" class="form-field__input" placeholder="45962">
+                          </label>
+                        </div>
+                        <div class="form-field">
+                          <label class="form-field__label">
+                            <span class="form-field__info">Country</span>
+                            <input type="text" class="form-field__input" placeholder="USA">
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="user-profile__btn-wrapper">
+                        <button type="submit" class="btn btn-primary btn--theme-primary btn-primary--md">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__body">
+                content 2
+              </div>
+              <div class="tabs__body">
+                content 3
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main/main.js"></script>
+</body>
+
+</html>

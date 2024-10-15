@@ -1,0 +1,8 @@
+.content {
+  background-color: #f5f7fa;
+  min-height: 100vh;
+
+  @include media(md) {
+    padding-left: 250px;
+  }
+}

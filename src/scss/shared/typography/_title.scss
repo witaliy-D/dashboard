@@ -1,0 +1,43 @@
+.title {
+    --dp-block: block;
+    display: var(--dp-block);
+    font-weight: 600;
+    line-height: 1.2;
+    color: #343c6a;
+    //font-family: $font;
+    //text-transform: uppercase;
+    word-wrap: break-word;
+    margin-bottom: 0;
+
+    //? theme
+    //&--white {
+    //    color: #fff;
+    //}
+
+    //* размеры
+    &--size {
+        //&-sm {
+        //     font-size: size(24);
+        //     @include media(lg) {
+        //         font-size: size(36);
+        //     }
+        // }
+        &-md {
+            font-size: 20px;
+
+            @include media(md) {
+                font-size: 28px;
+            }
+        }
+        //&-lg {
+        //     font-size: size(24);
+        //     @include media(lg) {
+        //         font-size: size(72);
+        //     }
+        // }
+    }
+    //* стиль
+}
+
+
+// font-feature-settings: 'pnum' on, 'lnum' on;
